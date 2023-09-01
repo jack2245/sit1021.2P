@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Cricket </title>
+</head>
+<body>
+  <h1>Cricket is one of most popular sport in the world </h1>
+
+  <script>
+    // String methods
+    let str = "Hello, World!";
+    console.log("toUpperCase:", str.toUpperCase());
+    console.log("toLowerCase:", str.toLowerCase());
+    console.log("charAt:", str.charAt(7));
+    console.log("indexOf:", str.indexOf("o"));
+    console.log("lastIndexOf:", str.lastIndexOf("o"));
+    console.log("startsWith:", str.startsWith("Hello"));
+    console.log("endsWith:", str.endsWith("World!"));
+    console.log("substring:", str.substring(7, 12));
+    console.log("replace:", str.replace("World", "Universe"));
+    console.log("trim:", "   spaces   ".trim());
+    console.log("concat:", str.concat(" How are you?"));
+    console.log("split:", str.split(", "));
+    console.log("length:", str.length);
+    console.log("slice:", str.slice(7));
+    console.log("repeat:", str.repeat(3));
+
+    // Number methods
+    let num = 42.765;
+    console.log("toFixed:", num.toFixed(2));
+    console.log("toPrecision:", num.toPrecision(4));
+    console.log("toString:", num.toString());
+    console.log("toExponential:", num.toExponential(2));
+    console.log("parseInt:", parseInt("12345"));
+    console.log("parseFloat:", parseFloat("3.14"));
+    console.log("isNaN:", isNaN(num));
+    console.log("isFinite:", isFinite(num));
+    console.log("Math.round:", Math.round(num));
+    console.log("Math.ceil:", Math.ceil(num));
+
+    // Array methods
+    let arr = [1, 2, 3, "four", "five", 6];
+    console.log("length:", arr.length);
+    console.log("push:", arr.push(7));
+    console.log("pop:", arr.pop());
+    console.log("shift:", arr.shift());
+    console.log("unshift:", arr.unshift(0));
+    console.log("splice:", arr.splice(3, 1));
+    console.log("concat:", arr.concat([8, 9]));
+    console.log("join:", arr.join("-"));
+    console.log("indexOf:", arr.indexOf("four"));
+    console.log("lastIndexOf:", arr.lastIndexOf(6));
+    console.log("reverse:", arr.reverse());
+    console.log("slice:", arr.slice(2, 5));
+
+    // Date methods
+    let currentDate = new Date();
+    console.log("toLocaleDateString:", currentDate.toLocaleDateString());
+    console.log("toUTCString:", currentDate.toUTCString());
+    console.log("getFullYear:", currentDate.getFullYear());
+    console.log("getMonth:", currentDate.getMonth());
+    console.log("getDate:", currentDate.getDate());
+    console.log("getDay:", currentDate.getDay());
+    console.log("getHours:", currentDate.getHours());
+    console.log("getMinutes:", currentDate.getMinutes());
+
+    // Function methods
+    function greet(name) {
+      console.log("Hello, " + name + "!");
+    }
+    console.log("toString:", greet.toString());
+    console.log("length:", greet.length);
+    console.log("apply:");
+    greet.apply(null, ["Alice"]);
+    console.log("call:");
+    greet.call(null, "Bob");
+  </script>
+</body>
+</html>
